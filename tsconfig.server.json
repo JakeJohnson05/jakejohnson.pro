@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES6",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "removeComments": true
+  },
+  "files": [
+    "server.ts",
+    "database.ts"
+  ],
+  "include": [
+    "api/**/*"
+  ]
+}
