@@ -1,0 +1,25 @@
+//
+// This is a Sass Partial file for defining the angular material theme for the project.
+// This file will be referenced in theme scss files for components for referencing colors
+// 	from the theme and applying them to the components.
+//
+// Import material theming functions
+@import '~@angular/material/theming';
+
+///////////////////////////////////
+// Global Variables
+//
+// $title-bar-height: 90px;
+
+///////////////////////////////////
+// Global Mixins/Functions
+//
+@mixin mult-props($properties, $value) {
+	@each $property in $properties {
+		#{$property}: $value;
+	}
+}
+
+@mixin bold-text($font-weight: 400) {
+	font-weight: $font-weight;
+}
